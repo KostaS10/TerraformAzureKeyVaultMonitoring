@@ -12,5 +12,5 @@ resource "azurerm_key_vault" "kv" {
   tenant_id                  = data.azurerm_client_config.current.tenant_id
   sku_name                   = "standard"
   soft_delete_enabled        = true
-  soft_delete_retention_days = 7
+  soft_delete_retention_days = 14
 }
